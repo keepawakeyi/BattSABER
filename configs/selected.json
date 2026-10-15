@@ -1,0 +1,77 @@
+{
+  "MLP": {
+    "hidden": [
+      256,
+      128,
+      64
+    ],
+    "dropout": 0.05,
+    "lr": 0.0005,
+    "weight_decay": 0.0001
+  },
+  "CNN": {
+    "channels": [
+      32,
+      64
+    ],
+    "kernel_size": 3,
+    "dropout": 0.05,
+    "lr": 0.001,
+    "weight_decay": 0.0
+  },
+  "GRU": {
+    "hidden": 128,
+    "layers": 1,
+    "dropout": 0.05,
+    "lr": 0.0005,
+    "weight_decay": 0.0001
+  },
+  "DLinear": {
+    "moving_avg": 15,
+    "lr": 0.0005,
+    "weight_decay": 0.0001
+  },
+  "LDNet": {
+    "base_channels": 8,
+    "channel_schedule": [
+      8,
+      16,
+      16
+    ],
+    "bottleneck_channels": 8,
+    "dropout": 0.0,
+    "lr": 0.001,
+    "weight_decay": 0.0
+  },
+  "OmniTIEFormer": {
+    "patch_len": 4,
+    "d_model": 8,
+    "n_heads": 2,
+    "e_layers": 1,
+    "dropout": 0.0,
+    "lr": 0.0005,
+    "weight_decay": 0.0
+  },
+  "ModernTCN": {
+    "patch_size": 8,
+    "patch_stride": 4,
+    "downsample_ratio": 2,
+    "ffn_ratio": 1,
+    "num_blocks": [
+      1,
+      1,
+      1
+    ],
+    "large_kernel": 51,
+    "small_kernel": 5,
+    "dims": [
+      32,
+      64,
+      64
+    ],
+    "dropout": 0.3,
+    "head_dropout": 0.0,
+    "lr": 0.001,
+    "weight_decay": 0.0
+  }
+}

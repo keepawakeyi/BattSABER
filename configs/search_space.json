@@ -1,0 +1,388 @@
+{
+  "MLP": [
+    {
+      "hidden": [
+        64,
+        32
+      ],
+      "dropout": 0.0,
+      "lr": 0.0005,
+      "weight_decay": 0.0
+    },
+    {
+      "hidden": [
+        128,
+        64
+      ],
+      "dropout": 0.05,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "hidden": [
+        256,
+        128
+      ],
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 1e-05
+    },
+    {
+      "hidden": [
+        128,
+        64,
+        32
+      ],
+      "dropout": 0.1,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.05,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    }
+  ],
+  "CNN": [
+    {
+      "channels": [
+        16,
+        32
+      ],
+      "kernel_size": 3,
+      "dropout": 0.0,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "channels": [
+        32,
+        64
+      ],
+      "kernel_size": 3,
+      "dropout": 0.05,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "channels": [
+        32,
+        64
+      ],
+      "kernel_size": 5,
+      "dropout": 0.05,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "channels": [
+        64,
+        128
+      ],
+      "kernel_size": 3,
+      "dropout": 0.1,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "channels": [
+        64,
+        64
+      ],
+      "kernel_size": 5,
+      "dropout": 0.1,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    }
+  ],
+  "GRU": [
+    {
+      "hidden": 32,
+      "layers": 1,
+      "dropout": 0.0,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "hidden": 64,
+      "layers": 2,
+      "dropout": 0.05,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "hidden": 128,
+      "layers": 2,
+      "dropout": 0.1,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "hidden": 64,
+      "layers": 3,
+      "dropout": 0.1,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "hidden": 128,
+      "layers": 1,
+      "dropout": 0.05,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    }
+  ],
+  "DLinear": [
+    {
+      "moving_avg": 1,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "moving_avg": 3,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "moving_avg": 5,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "moving_avg": 9,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "moving_avg": 15,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    }
+  ],
+  "LDNet": [
+    {
+      "base_channels": 4,
+      "channel_schedule": [
+        4,
+        8,
+        8
+      ],
+      "bottleneck_channels": 4,
+      "dropout": 0.0,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "base_channels": 8,
+      "channel_schedule": [
+        8,
+        16,
+        16
+      ],
+      "bottleneck_channels": 8,
+      "dropout": 0.0,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "base_channels": 8,
+      "channel_schedule": [
+        8,
+        16,
+        32
+      ],
+      "bottleneck_channels": 8,
+      "dropout": 0.05,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "base_channels": 12,
+      "channel_schedule": [
+        12,
+        24,
+        24
+      ],
+      "bottleneck_channels": 12,
+      "dropout": 0.05,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "base_channels": 16,
+      "channel_schedule": [
+        16,
+        32,
+        32
+      ],
+      "bottleneck_channels": 16,
+      "dropout": 0.1,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    }
+  ],
+  "OmniTIEFormer": [
+    {
+      "patch_len": 4,
+      "d_model": 8,
+      "n_heads": 4,
+      "e_layers": 1,
+      "dropout": 0.05,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "patch_len": 4,
+      "d_model": 8,
+      "n_heads": 2,
+      "e_layers": 1,
+      "dropout": 0.0,
+      "lr": 0.0005,
+      "weight_decay": 0.0
+    },
+    {
+      "patch_len": 4,
+      "d_model": 16,
+      "n_heads": 4,
+      "e_layers": 1,
+      "dropout": 0.05,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "patch_len": 8,
+      "d_model": 8,
+      "n_heads": 4,
+      "e_layers": 1,
+      "dropout": 0.05,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "patch_len": 2,
+      "d_model": 8,
+      "n_heads": 4,
+      "e_layers": 2,
+      "dropout": 0.1,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    }
+  ],
+  "ModernTCN": [
+    {
+      "patch_size": 8,
+      "patch_stride": 4,
+      "downsample_ratio": 2,
+      "ffn_ratio": 1,
+      "num_blocks": [
+        1,
+        1,
+        1
+      ],
+      "large_kernel": 51,
+      "small_kernel": 5,
+      "dims": [
+        32,
+        64,
+        64
+      ],
+      "dropout": 0.3,
+      "head_dropout": 0.0,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "patch_size": 8,
+      "patch_stride": 4,
+      "downsample_ratio": 2,
+      "ffn_ratio": 1,
+      "num_blocks": [
+        1,
+        1,
+        1
+      ],
+      "large_kernel": 31,
+      "small_kernel": 5,
+      "dims": [
+        32,
+        64,
+        64
+      ],
+      "dropout": 0.1,
+      "head_dropout": 0.0,
+      "lr": 0.001,
+      "weight_decay": 0.0
+    },
+    {
+      "patch_size": 8,
+      "patch_stride": 4,
+      "downsample_ratio": 2,
+      "ffn_ratio": 2,
+      "num_blocks": [
+        1,
+        1,
+        1
+      ],
+      "large_kernel": 51,
+      "small_kernel": 5,
+      "dims": [
+        32,
+        64,
+        64
+      ],
+      "dropout": 0.2,
+      "head_dropout": 0.0,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "patch_size": 4,
+      "patch_stride": 2,
+      "downsample_ratio": 2,
+      "ffn_ratio": 1,
+      "num_blocks": [
+        1,
+        1,
+        1
+      ],
+      "large_kernel": 31,
+      "small_kernel": 3,
+      "dims": [
+        32,
+        64,
+        64
+      ],
+      "dropout": 0.1,
+      "head_dropout": 0.0,
+      "lr": 0.0005,
+      "weight_decay": 1e-05
+    },
+    {
+      "patch_size": 8,
+      "patch_stride": 4,
+      "downsample_ratio": 2,
+      "ffn_ratio": 1,
+      "num_blocks": [
+        1,
+        2,
+        1
+      ],
+      "large_kernel": 51,
+      "small_kernel": 5,
+      "dims": [
+        32,
+        64,
+        64
+      ],
+      "dropout": 0.2,
+      "head_dropout": 0.0,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    }
+  ]
+}

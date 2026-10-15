@@ -1,0 +1,6 @@
+# Install the torch build appropriate for your CPU/CUDA platform.
+torch==2.7.1
+numpy==1.23.5
+pandas==1.5.3
+scikit-learn==1.7.1
+einops==0.8.0

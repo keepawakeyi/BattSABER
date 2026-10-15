@@ -1,0 +1,37 @@
+﻿index,feature_name,stage,source_signal,definition,unit
+1,cc_time,cc,t,t_end - t_start,s
+2,cc_energy,cc,"V, I, t","trapz(V*I, t)",Wh
+3,cc_capacity,cc,"I, t","trapz(I, t)",Ah
+4,cc_current_mean,cc,I,stage sample statistic,A
+5,cc_voltage_mean,cc,V,stage sample statistic,V
+6,cc_temperature_mean,cc,T,stage sample statistic,degC
+7,cc_ic_mean,cc,dQ/dV,sequence statistics of IC=dQ/dV,Ah/V
+8,cc_vs_mean,cc,dV/dt,sequence statistics of VS=dV/dt,V/s
+9,cc_voltage_std,cc,V,stage sample statistic,V
+10,cc_temperature_std,cc,T,stage sample statistic,degC
+11,cc_ic_std,cc,dQ/dV,sequence statistics of IC=dQ/dV,Ah/V
+12,cc_vs_std,cc,dV/dt,sequence statistics of VS=dV/dt,V/s
+13,cc_voltage_rms,cc,V,stage sample statistic,V
+14,cc_temperature_rms,cc,T,stage sample statistic,degC
+15,cc_ic_rms,cc,dQ/dV,sequence statistics of IC=dQ/dV,Ah/V
+16,cc_vs_rms,cc,dV/dt,sequence statistics of VS=dV/dt,V/s
+17,cc_voltage_gradient,cc,cc_voltage_gradient,mean(diff(sequence)/diff(t_sequence)),stage-dependent
+18,cc_temperature_gradient,cc,cc_temperature_gradient,mean(diff(sequence)/diff(t_sequence)),stage-dependent
+19,cc_ic_gradient,cc,cc_ic_gradient,mean(diff(sequence)/diff(t_sequence)),stage-dependent
+20,cc_vs_gradient,cc,cc_vs_gradient,mean(diff(sequence)/diff(t_sequence)),stage-dependent
+21,cv_time,cv,t,t_end - t_start,s
+22,cv_energy,cv,"V, I, t","trapz(V*I, t)",Wh
+23,cv_capacity,cv,"I, t","trapz(I, t)",Ah
+24,cv_current_mean,cv,I,stage sample statistic,A
+25,cv_voltage_mean,cv,V,stage sample statistic,V
+26,cv_temperature_mean,cv,T,stage sample statistic,degC
+27,cv_cdr_mean,cv,-dI/dt,sequence statistics of CDR=-dI/dt,A/s
+28,cv_current_std,cv,I,stage sample statistic,A
+29,cv_temperature_std,cv,T,stage sample statistic,degC
+30,cv_cdr_std,cv,-dI/dt,sequence statistics of CDR=-dI/dt,A/s
+31,cv_current_rms,cv,I,stage sample statistic,A
+32,cv_temperature_rms,cv,T,stage sample statistic,degC
+33,cv_cdr_rms,cv,-dI/dt,sequence statistics of CDR=-dI/dt,A/s
+34,cv_current_gradient,cv,cv_current_gradient,mean(diff(sequence)/diff(t_sequence)),stage-dependent
+35,cv_temperature_gradient,cv,cv_temperature_gradient,mean(diff(sequence)/diff(t_sequence)),stage-dependent
+36,cv_cdr_gradient,cv,cv_cdr_gradient,mean(diff(sequence)/diff(t_sequence)),stage-dependent
