@@ -396,7 +396,7 @@ class OmniTIEFormer(nn.Module):
         activation='gelu',
         e_layers=2,
         output_channels=1,
-        tcem_fusion_weight=0.0,
+        tcem_fusion_weight=0.5,
         lhfa_reduction=16,
         lhfa_kernel_size=3
     ):
