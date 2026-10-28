@@ -47,7 +47,7 @@ def make_model(method: str, params: dict | None = None):
             patch_len=int(p["patch_len"]), seq_len=seq_len, pred_len=pred_len,
             enc_in=channels, d_model=int(p["d_model"]), n_heads=int(p["n_heads"]),
             e_layers=int(p["e_layers"]), dropout=float(p["dropout"]),
-            output_channels=1, tcem_fusion_weight=0.0)
+            output_channels=1, tcem_fusion_weight=float(p.get("tcem_fusion_weight", 0.5)))
     if method == "ModernTCN":
         return ModernTCN(
             seq_len=64,
